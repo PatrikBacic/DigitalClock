@@ -34,6 +34,7 @@
             this.bmButton = new System.Windows.Forms.Button();
             this.timezoneListBox = new System.Windows.Forms.ListBox();
             this.displayTzLabel = new System.Windows.Forms.Label();
+            this.tzLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timeLabel
@@ -56,11 +57,11 @@
             // bmButton
             // 
             this.bmButton.BackColor = System.Drawing.Color.White;
-            this.bmButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bmButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bmButton.ForeColor = System.Drawing.Color.Black;
-            this.bmButton.Location = new System.Drawing.Point(88, 381);
+            this.bmButton.Location = new System.Drawing.Point(88, 401);
             this.bmButton.Name = "bmButton";
-            this.bmButton.Size = new System.Drawing.Size(104, 23);
+            this.bmButton.Size = new System.Drawing.Size(138, 39);
             this.bmButton.TabIndex = 1;
             this.bmButton.Text = "Bright mode";
             this.bmButton.UseVisualStyleBackColor = false;
@@ -95,12 +96,24 @@
             this.displayTzLabel.Text = "Central European Time";
             this.displayTzLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // tzLabel
+            // 
+            this.tzLabel.AutoSize = true;
+            this.tzLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tzLabel.ForeColor = System.Drawing.Color.Green;
+            this.tzLabel.Location = new System.Drawing.Point(584, 375);
+            this.tzLabel.Name = "tzLabel";
+            this.tzLabel.Size = new System.Drawing.Size(115, 23);
+            this.tzLabel.TabIndex = 4;
+            this.tzLabel.Text = "Time zones:";
+            // 
             // DigitalClock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(791, 512);
+            this.Controls.Add(this.tzLabel);
             this.Controls.Add(this.displayTzLabel);
             this.Controls.Add(this.timezoneListBox);
             this.Controls.Add(this.bmButton);
@@ -110,6 +123,7 @@
             this.Text = "Digital Clock";
             this.Load += new System.EventHandler(this.DigitalClock_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -120,6 +134,7 @@
         private System.Windows.Forms.Button bmButton;
         private System.Windows.Forms.ListBox timezoneListBox;
         private System.Windows.Forms.Label displayTzLabel;
+        private System.Windows.Forms.Label tzLabel;
     }
 }
 

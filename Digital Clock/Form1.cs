@@ -72,6 +72,7 @@ namespace Digital_Clock
                 this.BackColor = Color.White;
                 timeLabel.ForeColor = Color.Black;
                 displayTzLabel.ForeColor = Color.Black;
+                tzLabel.ForeColor = Color.Black;
                 bright = true;
             }
             else
@@ -82,6 +83,7 @@ namespace Digital_Clock
                 this.BackColor = Color.Black;
                 timeLabel.ForeColor = Color.Green;
                 displayTzLabel.ForeColor = Color.Green;
+                tzLabel.ForeColor = Color.Green;
                 bright = false;
             }
         }
