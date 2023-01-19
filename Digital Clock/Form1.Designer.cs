@@ -31,11 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.timeLabel = new System.Windows.Forms.Label();
             this.clockTimer = new System.Windows.Forms.Timer(this.components);
+            this.bmButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timeLabel
             // 
             this.timeLabel.Font = new System.Drawing.Font("Century Gothic", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLabel.ForeColor = System.Drawing.Color.Green;
             this.timeLabel.Location = new System.Drawing.Point(13, 13);
             this.timeLabel.Name = "timeLabel";
             this.timeLabel.Size = new System.Drawing.Size(775, 381);
@@ -48,12 +50,26 @@
             this.clockTimer.Interval = 1000;
             this.clockTimer.Tick += new System.EventHandler(this.clockTimer_Tick);
             // 
+            // bmButton
+            // 
+            this.bmButton.BackColor = System.Drawing.Color.White;
+            this.bmButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bmButton.ForeColor = System.Drawing.Color.Black;
+            this.bmButton.Location = new System.Drawing.Point(13, 415);
+            this.bmButton.Name = "bmButton";
+            this.bmButton.Size = new System.Drawing.Size(104, 23);
+            this.bmButton.TabIndex = 1;
+            this.bmButton.Text = "Bright mode";
+            this.bmButton.UseVisualStyleBackColor = false;
+            this.bmButton.Click += new System.EventHandler(this.bmButton_Click);
+            // 
             // DigitalClock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bmButton);
             this.Controls.Add(this.timeLabel);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Name = "DigitalClock";
@@ -67,6 +83,7 @@
 
         private System.Windows.Forms.Label timeLabel;
         private System.Windows.Forms.Timer clockTimer;
+        private System.Windows.Forms.Button bmButton;
     }
 }
 
