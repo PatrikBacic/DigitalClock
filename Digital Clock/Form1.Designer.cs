@@ -28,18 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.loadingLabel = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            this.timeLabel = new System.Windows.Forms.Label();
+            this.clockTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // loadingLabel
+            // timeLabel
             // 
-            this.loadingLabel.Font = new System.Drawing.Font("Stencil", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadingLabel.Location = new System.Drawing.Point(13, 13);
-            this.loadingLabel.Name = "loadingLabel";
-            this.loadingLabel.Size = new System.Drawing.Size(775, 381);
-            this.loadingLabel.TabIndex = 0;
-            this.loadingLabel.Text = ". . .";
-            this.loadingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.timeLabel.Font = new System.Drawing.Font("Century Gothic", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLabel.Location = new System.Drawing.Point(13, 13);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(775, 381);
+            this.timeLabel.TabIndex = 0;
+            this.timeLabel.Text = ". . .";
+            this.timeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // clockTimer
+            // 
+            this.clockTimer.Interval = 1000;
+            this.clockTimer.Tick += new System.EventHandler(this.clockTimer_Tick);
             // 
             // DigitalClock
             // 
@@ -47,17 +54,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.loadingLabel);
+            this.Controls.Add(this.timeLabel);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Name = "DigitalClock";
             this.Text = "Digital Clock";
+            this.Load += new System.EventHandler(this.DigitalClock_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label loadingLabel;
+        private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Timer clockTimer;
     }
 }
 

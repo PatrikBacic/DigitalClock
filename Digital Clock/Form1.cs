@@ -16,5 +16,15 @@ namespace Digital_Clock
         {
             InitializeComponent();
         }
+        private void DigitalClock_Load(object sender, EventArgs e)
+        {
+            clockTimer.Start();
+        }
+
+        private void clockTimer_Tick(object sender, EventArgs e)
+        {
+            timeLabel.Text = DateTime.Now.ToString("G");
+        }
+
     }
 }
