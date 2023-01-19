@@ -17,6 +17,7 @@ namespace Digital_Clock
         public DigitalClock()
         {
             InitializeComponent();
+            bmButton.FlatStyle = FlatStyle.Flat;
         }
         private void DigitalClock_Load(object sender, EventArgs e)
         {
