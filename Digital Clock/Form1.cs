@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Digital_Clock
 {
-    public partial class Form1 : Form
+    public partial class DigitalClock : Form
     {
-        public Form1()
+        public DigitalClock()
         {
             InitializeComponent();
         }
