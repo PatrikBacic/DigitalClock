@@ -29,83 +29,83 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.timeLabel = new System.Windows.Forms.Label();
+            this.TimeLabel = new System.Windows.Forms.Label();
             this.clockTimer = new System.Windows.Forms.Timer(this.components);
-            this.bmButton = new System.Windows.Forms.Button();
-            this.timezoneListBox = new System.Windows.Forms.ListBox();
-            this.displayTzLabel = new System.Windows.Forms.Label();
-            this.tzLabel = new System.Windows.Forms.Label();
+            this.BmButton = new System.Windows.Forms.Button();
+            this.TimezoneListBox = new System.Windows.Forms.ListBox();
+            this.DisplayTzLabel = new System.Windows.Forms.Label();
+            this.TzLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // timeLabel
+            // TimeLabel
             // 
-            this.timeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.timeLabel.Font = new System.Drawing.Font("Century Gothic", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeLabel.ForeColor = System.Drawing.Color.Green;
-            this.timeLabel.Location = new System.Drawing.Point(88, 59);
-            this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(620, 306);
-            this.timeLabel.TabIndex = 0;
-            this.timeLabel.Text = ". . .";
-            this.timeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TimeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TimeLabel.Font = new System.Drawing.Font("Century Gothic", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeLabel.ForeColor = System.Drawing.Color.Green;
+            this.TimeLabel.Location = new System.Drawing.Point(88, 59);
+            this.TimeLabel.Name = "TimeLabel";
+            this.TimeLabel.Size = new System.Drawing.Size(620, 306);
+            this.TimeLabel.TabIndex = 0;
+            this.TimeLabel.Text = ". . .";
+            this.TimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // clockTimer
             // 
             this.clockTimer.Interval = 1000;
-            this.clockTimer.Tick += new System.EventHandler(this.clockTimer_Tick);
+            this.clockTimer.Tick += new System.EventHandler(this.ClockTimer_Tick);
             // 
-            // bmButton
+            // BmButton
             // 
-            this.bmButton.BackColor = System.Drawing.Color.White;
-            this.bmButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.bmButton.ForeColor = System.Drawing.Color.Black;
-            this.bmButton.Location = new System.Drawing.Point(88, 401);
-            this.bmButton.Name = "bmButton";
-            this.bmButton.Size = new System.Drawing.Size(138, 39);
-            this.bmButton.TabIndex = 1;
-            this.bmButton.Text = "Bright mode";
-            this.bmButton.UseVisualStyleBackColor = false;
-            this.bmButton.Click += new System.EventHandler(this.bmButton_Click);
+            this.BmButton.BackColor = System.Drawing.Color.White;
+            this.BmButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BmButton.ForeColor = System.Drawing.Color.Black;
+            this.BmButton.Location = new System.Drawing.Point(88, 401);
+            this.BmButton.Name = "BmButton";
+            this.BmButton.Size = new System.Drawing.Size(138, 39);
+            this.BmButton.TabIndex = 1;
+            this.BmButton.Text = "Bright mode";
+            this.BmButton.UseVisualStyleBackColor = false;
+            this.BmButton.Click += new System.EventHandler(this.BmButton_Click);
             // 
-            // timezoneListBox
+            // TimezoneListBox
             // 
-            this.timezoneListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.timezoneListBox.FormattingEnabled = true;
-            this.timezoneListBox.Items.AddRange(new object[] {
+            this.TimezoneListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TimezoneListBox.FormattingEnabled = true;
+            this.TimezoneListBox.Items.AddRange(new object[] {
             "CET",
             "PST",
             "EST",
             "GMT",
             "JST",
             " "});
-            this.timezoneListBox.Location = new System.Drawing.Point(588, 401);
-            this.timezoneListBox.Name = "timezoneListBox";
-            this.timezoneListBox.Size = new System.Drawing.Size(120, 67);
-            this.timezoneListBox.TabIndex = 2;
-            this.timezoneListBox.SelectedIndexChanged += new System.EventHandler(this.timezoneListBox_SelectedIndexChanged);
+            this.TimezoneListBox.Location = new System.Drawing.Point(588, 401);
+            this.TimezoneListBox.Name = "TimezoneListBox";
+            this.TimezoneListBox.Size = new System.Drawing.Size(120, 67);
+            this.TimezoneListBox.TabIndex = 2;
+            this.TimezoneListBox.SelectedIndexChanged += new System.EventHandler(this.TimezoneListBox_SelectedIndexChanged);
             // 
-            // displayTzLabel
+            // DisplayTzLabel
             // 
-            this.displayTzLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.displayTzLabel.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.displayTzLabel.ForeColor = System.Drawing.Color.Green;
-            this.displayTzLabel.Location = new System.Drawing.Point(189, 20);
-            this.displayTzLabel.Name = "displayTzLabel";
-            this.displayTzLabel.Size = new System.Drawing.Size(421, 39);
-            this.displayTzLabel.TabIndex = 3;
-            this.displayTzLabel.Text = "Central European Time";
-            this.displayTzLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.DisplayTzLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DisplayTzLabel.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DisplayTzLabel.ForeColor = System.Drawing.Color.Green;
+            this.DisplayTzLabel.Location = new System.Drawing.Point(189, 20);
+            this.DisplayTzLabel.Name = "DisplayTzLabel";
+            this.DisplayTzLabel.Size = new System.Drawing.Size(421, 39);
+            this.DisplayTzLabel.TabIndex = 3;
+            this.DisplayTzLabel.Text = "Central European Time";
+            this.DisplayTzLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // tzLabel
+            // TzLabel
             // 
-            this.tzLabel.AutoSize = true;
-            this.tzLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tzLabel.ForeColor = System.Drawing.Color.Green;
-            this.tzLabel.Location = new System.Drawing.Point(584, 375);
-            this.tzLabel.Name = "tzLabel";
-            this.tzLabel.Size = new System.Drawing.Size(115, 23);
-            this.tzLabel.TabIndex = 4;
-            this.tzLabel.Text = "Time zones:";
+            this.TzLabel.AutoSize = true;
+            this.TzLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TzLabel.ForeColor = System.Drawing.Color.Green;
+            this.TzLabel.Location = new System.Drawing.Point(584, 375);
+            this.TzLabel.Name = "TzLabel";
+            this.TzLabel.Size = new System.Drawing.Size(115, 23);
+            this.TzLabel.TabIndex = 4;
+            this.TzLabel.Text = "Time zones:";
             // 
             // DigitalClock
             // 
@@ -113,11 +113,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(791, 512);
-            this.Controls.Add(this.tzLabel);
-            this.Controls.Add(this.displayTzLabel);
-            this.Controls.Add(this.timezoneListBox);
-            this.Controls.Add(this.bmButton);
-            this.Controls.Add(this.timeLabel);
+            this.Controls.Add(this.TzLabel);
+            this.Controls.Add(this.DisplayTzLabel);
+            this.Controls.Add(this.TimezoneListBox);
+            this.Controls.Add(this.BmButton);
+            this.Controls.Add(this.TimeLabel);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Name = "DigitalClock";
             this.Text = "Digital Clock";
@@ -129,12 +129,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Label TimeLabel;
         private System.Windows.Forms.Timer clockTimer;
-        private System.Windows.Forms.Button bmButton;
-        private System.Windows.Forms.ListBox timezoneListBox;
-        private System.Windows.Forms.Label displayTzLabel;
-        private System.Windows.Forms.Label tzLabel;
+        private System.Windows.Forms.Button BmButton;
+        private System.Windows.Forms.ListBox TimezoneListBox;
+        private System.Windows.Forms.Label DisplayTzLabel;
+        private System.Windows.Forms.Label TzLabel;
     }
 }
 
